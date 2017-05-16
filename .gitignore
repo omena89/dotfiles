@@ -3,3 +3,4 @@
 !.gitignore
 !.config/zathura/*
 !.config/zathura/zathurarc
+!.zshrc

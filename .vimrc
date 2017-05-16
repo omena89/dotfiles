@@ -172,7 +172,7 @@ let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 " toggle search highlights
 :noremap <F4> :set hlsearch! hlsearch?<CR>
 
-nmap <F5> :!/home/omppu/Projects/goPicture/start.sh <CR> :redraw! <CR>
+nmap <F5> :!~/Projects/goPicture/start.sh <CR> :redraw! <CR>
 nmap <F6> :BufExplorerVerticalSplit<CR>
 nmap <F7> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
