@@ -1,3 +1,5 @@
 *
 !.vimrc
 !.gitignore
+!.config/zathura/*
+!.config/zathura/zathurarc
