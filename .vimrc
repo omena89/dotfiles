@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
+	Plug 'powerline/powerline', { 'rtp': 'powerline/bindings/vim' }
 	Plug 'morhetz/gruvbox' " colorscheme
         Plug 'scrooloose/nerdtree' " Filebrowser
         Plug 'tpope/vim-surround' " markierungen mit S + Zeichenkette umgeben
