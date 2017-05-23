@@ -12,6 +12,8 @@ call plug#begin('~/.vim/plugged')
         Plug 'jlanzarotta/bufexplorer'
         Plug 'fatih/vim-go'
         Plug 'Shougo/neocomplete.vim' "autocompletion golang
+        Plug 'godlygeek/tabular'
+        Plug 'plasticboy/vim-markdown'
 
 call plug#end()
 
@@ -80,6 +82,7 @@ command! Trim call TrimWhitespace()
 
 set hidden
 let mapleader=","
+let maplocalleader=","
 nmap <leader>n :enew<cr>
 nmap <leader><leader> :bnext<CR>
 nmap <leader>. :bprevious<CR>

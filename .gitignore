@@ -1,6 +1,8 @@
 *
 !.vimrc
 !.gitignore
+!.config/libinput-gestures.conf
 !.config/zathura/*
 !.config/zathura/zathurarc
 !.zshrc
+
