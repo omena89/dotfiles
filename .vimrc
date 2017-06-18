@@ -14,6 +14,9 @@ call plug#begin('~/.vim/plugged')
         Plug 'Shougo/neocomplete.vim' "autocompletion golang
         Plug 'godlygeek/tabular'
         Plug 'plasticboy/vim-markdown'
+        Plug 'ctrlpvim/ctrlp.vim'
+        Plug 'tpope/vim-fugitive'
+        Plug 'lervag/vimtex'
 
 call plug#end()
 
