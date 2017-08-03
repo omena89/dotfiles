@@ -16,6 +16,7 @@ call plug#begin('~/.vim/plugged')
         Plug 'plasticboy/vim-markdown'
         Plug 'ctrlpvim/ctrlp.vim'
         Plug 'tpope/vim-fugitive'
+        Plug 'scrooloose/nerdcommenter'       
         Plug 'lervag/vimtex'
         Plug 'xolox/vim-misc'
         Plug 'xolox/vim-notes'
