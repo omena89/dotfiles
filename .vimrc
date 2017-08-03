@@ -17,6 +17,8 @@ call plug#begin('~/.vim/plugged')
         Plug 'ctrlpvim/ctrlp.vim'
         Plug 'tpope/vim-fugitive'
         Plug 'lervag/vimtex'
+        Plug 'xolox/vim-misc'
+        Plug 'xolox/vim-notes'
 
 call plug#end()
 
@@ -25,6 +27,8 @@ filetype on
 filetype plugin indent on
 filetype plugin on
 syntax on
+
+let g:notes_directories = ['~/Documents/Notizen']
 
 " execute pathogen#infect()
 "let g:airline_theme='gruvbox'
@@ -180,6 +184,6 @@ let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 :noremap <F4> :set hlsearch! hlsearch?<CR>
 
 nmap <F5> :!~/Projects/goPicture/start.sh <CR> :redraw! <CR>
-nmap <F6> :BufExplorerVerticalSplit<CR>
+nmap <F6> :BufExplorerHorizontalSplit<CR>
 nmap <F7> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
