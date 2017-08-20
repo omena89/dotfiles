@@ -29,7 +29,7 @@ filetype plugin indent on
 filetype plugin on
 syntax on
 
-let g:notes_directories = ['~/Documents/Notizen']
+let g:notes_directories = ['~/ownCloud/Notizen/']
 
 " execute pathogen#infect()
 "let g:airline_theme='gruvbox'
