@@ -6,6 +6,7 @@ export ZSH=/home/omppu/.oh-my-zsh
 
 export VISUAL=vim
 export EDITOR=vim
+export GOPATH=/home/omppu/go
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -92,6 +93,10 @@ source $ZSH/oh-my-zsh.sh
 #
 alias project='cd ~/Projects/goPicture'
 
+alias sublime LANG=en_US.UTF-8 LC_CTYPE=en_US.UTF-8 LC_ALL=de_DE.UTF-8 /opt/sublime_text_3/sublime_text 
+
+alias getYoutubePlaylist="youtube-dl --simulate --get-id $1 > playlist" 
+
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
@@ -112,3 +117,4 @@ if [[ -n ${TMUX} && -n ${commands[tmux]} ]];then
     fi
 
 
+screenfetch
