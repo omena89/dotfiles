@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-
 	Plug 'powerline/powerline', { 'rtp': 'powerline/bindings/vim' }
 	Plug 'morhetz/gruvbox' " colorscheme
         Plug 'scrooloose/nerdtree' " Filebrowser
@@ -21,7 +20,11 @@ call plug#begin('~/.vim/plugged')
         Plug 'xolox/vim-misc'
         Plug 'xolox/vim-notes'
         Plug 'tikhomirov/vim-glsl'
-
+        Plug 'leafgarland/typescript-vim'
+        Plug 'Quramy/tsuquyomi'
+        Plug 'kien/ctrlp.vim'
+        Plug 'MattesGroeger/vim-bookmarks'
+        Plug 'hyiltiz/vim-plugins-profile'
 call plug#end()
 
 
@@ -69,6 +72,7 @@ set clipboard^=unnamedplus
 " Folding
 set foldlevel=1
 set foldmethod=indent
+set nofoldenable
 
 :noremap / :set hlsearch<CR>/
 
@@ -77,6 +81,10 @@ colorscheme gruvbox
 set background=dark
 "hi Normal ctermfg=222 ctermbg=236
 hi Normal ctermfg=222 ctermbg=NONE
+
+" Bookmarks
+let g:bookmark_sign = '♥'
+let g:bookmark_highlight_lines = 1
 
 function TrimWhitespace()
   %s/\s*$//
@@ -107,8 +115,6 @@ set clipboard+=unnamedplus
 
 let g:go_highlight_types = 1
 
-
-
 " Ab hier Einstellungsmöglichkeiten zur Autovervollständigung
 let g:acp_enableAtStartup = 0
 " Use neocomplete.
@@ -129,6 +135,16 @@ let g:neocomplete#sources#dictionary#dictionaries = {
 if !exists('g:neocomplete#keyword_patterns')
     let g:neocomplete#keyword_patterns = {}
 endif
+
+" ctrlp - ignore path
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](.git|.hg|.svn|node_modules)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ 'node' : 'node_modules$',
+  \ }
+
+" NeoComplete
 let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 
 " Plugin key-mappings.
