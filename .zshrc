@@ -38,6 +38,7 @@ source $ZSH/oh-my-zsh.sh
 alias sublime LANG=en_US.UTF-8 LC_CTYPE=en_US.UTF-8 LC_ALL=de_DE.UTF-8 /opt/sublime_text_3/sublime_text 
 alias getYoutubePlaylist="youtube-dl --simulate --get-id $1 > playlist" 
 alias feh="feh -."
+alias dict="dict.cc.py $@"
 
 
 # #######################################################################################
