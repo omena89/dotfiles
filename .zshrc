@@ -10,14 +10,14 @@
 # #######################################################################################
 # Exports
 # #######################################################################################
-export PATH=$HOME/bin:/usr/local/bin:$HOME/Skripte:$HOME/go/bin:$PATH
+# export PATH=$HOME/bin:/usr/local/bin:$HOME/Skripte:$HOME/go/bin:$PATH
 export ZSH=/home/omppu/.oh-my-zsh
 export VISUAL=vim
 export EDITOR=vim
 export GOPATH=/home/omppu/go
 export QT_DIR=$HOME/daten/Qt5.8.0
 
-PATH="/home/omppu/perl5/bin${PATH:+:${PATH}}"; export PATH;
+#PATH="/home/omppu/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/home/omppu/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 PERL_LOCAL_LIB_ROOT="/home/omppu/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/home/omppu/perl5\""; export PERL_MB_OPT;
@@ -27,7 +27,9 @@ PERL_MM_OPT="INSTALL_BASE=/home/omppu/perl5"; export PERL_MM_OPT;
 # #######################################################################################
 # Setup ZSH-General
 # #######################################################################################
-ZSH_THEME="bira"
+#ZSH_THEME="bira"
+#ZSH_THEME="agnoster"
+ZSH_THEME="omppu"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
@@ -44,10 +46,10 @@ alias dict="dict.cc.py $@"
 # #######################################################################################
 # Setup Powerline
 # #######################################################################################
-powerline-daemon -q
+#powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
-. /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
+#. /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
 
 
 # #######################################################################################
